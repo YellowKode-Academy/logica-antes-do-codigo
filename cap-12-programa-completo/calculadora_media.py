@@ -4,44 +4,36 @@
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
 # Capitulo 12 - Seu Primeiro Programa Completo
+# Snippet: programa central - boletim com 3 trimestres
 # ============================================================
-# Calculadora de média escolar com 3 disciplinas
 
 def calcular_media(notas):
-    """Calcula a média de uma lista de notas."""
+    # Soma todos os valores e divide pela quantidade
     return sum(notas) / len(notas)
 
 def classificar_aluno(media):
-    """Retorna a situação do aluno baseada na média."""
-    if media >= 7:
-        return "APROVADO"
-    elif media >= 5:
-        return "RECUPERAÇÃO"
+    # Retorna a situacao com base nos criterios de aprovacao
+    if media >= 7.0:
+        return "Aprovado"
+    elif media >= 5.0:
+        return "Recuperacao"
     else:
-        return "REPROVADO"
+        return "Reprovado"
 
-def coletar_notas(disciplinas):
-    """Coleta as notas do usuário para cada disciplina."""
-    notas = []
-    for disciplina in disciplinas:
-        nota = float(input(f"Nota em {disciplina}: "))
-        notas.append(nota)
-    return notas
+# Coleta as notas dos tres trimestres
+notas = []
+for trimestre in range(1, 4):
+    nota = float(input(f"Nota do {trimestre}o trimestre: "))
+    notas.append(nota)
 
-
-# Programa principal
-print("=== Boletim Escolar ===")
-print()
-
-disciplinas = ["Matemática", "Português", "Ciências"]
-notas = coletar_notas(disciplinas)
-
+# Calcula e classifica
 media = calcular_media(notas)
 situacao = classificar_aluno(media)
 
-print()
-print("--- RESULTADO ---")
-for i, disciplina in enumerate(disciplinas):
-    print(f"{disciplina}: {notas[i]:.1f}")
-print(f"Média: {media:.1f}")
-print(f"Situação: {situacao}")
+# Exibe o boletim completo
+print("\n--- BOLETIM ---")
+print(f"1o trimestre: {notas[0]:.1f}")
+print(f"2o trimestre: {notas[1]:.1f}")
+print(f"3o trimestre: {notas[2]:.1f}")
+print(f"Media final:  {media:.1f}")
+print(f"Situacao:     {situacao}")

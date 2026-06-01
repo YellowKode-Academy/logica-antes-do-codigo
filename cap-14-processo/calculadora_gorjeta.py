@@ -3,53 +3,31 @@
 #        Do Pseudocodigo ao Python Real
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
-# Capitulo 14 - Do Pseudocodigo ao Python
+# Capitulo 14 - Do Pseudocodigo ao Python: O Processo de 6 Passos
+# Snippet: programa central - calculadora de gorjeta com asserts
 # ============================================================
-#
-# PROBLEMA: Calculadora de gorjeta
-#
-# PASSO 1 - Entender o problema:
-#   Entrada: valor da conta, percentual de gorjeta
-#   Saída: valor da gorjeta, total a pagar
-#
-# PASSO 2 - Exemplos concretos:
-#   Conta R$100, gorjeta 10% → gorjeta R$10, total R$110
-#   Conta R$85,  gorjeta 15% → gorjeta R$12.75, total R$97.75
-#   Conta R$200, gorjeta 20% → gorjeta R$40, total R$240
-#
-# PASSO 3 - Pseudocódigo:
-#   RECEBER valor_conta
-#   RECEBER percentual_gorjeta
-#   gorjeta = valor_conta * (percentual_gorjeta / 100)
-#   total = valor_conta + gorjeta
-#   MOSTRAR gorjeta, total
-#
-# PASSO 4 - Estruturas necessárias:
-#   Variáveis (float), operações aritméticas, print formatado
-#
-# PASSO 5 - Código:
 
-def calcular_gorjeta(valor_conta, percentual):
-    """Calcula gorjeta e total da conta."""
-    gorjeta = valor_conta * (percentual / 100)
-    total = valor_conta + gorjeta
-    return gorjeta, total
+# Passo 1: entender o problema - conta + percentual -> gorjeta e total
+# Passo 3: pseudocodigo foi escrito antes deste codigo
 
-print("=== Calculadora de Gorjeta ===")
+def calcular_gorjeta(conta, percentual):
+    # Passo 5: traducao direta do pseudocodigo para Python
+    gorjeta = conta * percentual / 100
+    total = conta + gorjeta
+    return gorjeta, total  # Python permite retornar dois valores
+
+# Modo interativo: pede os dados ao usuario
 conta = float(input("Valor da conta (R$): "))
 percentual = float(input("Percentual de gorjeta (%): "))
 
 gorjeta, total = calcular_gorjeta(conta, percentual)
 
-print()
-print(f"Conta:   R${conta:.2f}")
-print(f"Gorjeta: R${gorjeta:.2f} ({percentual:.0f}%)")
-print(f"Total:   R${total:.2f}")
+print(f"\nValor da gorjeta: R$ {gorjeta:.2f}")
+print(f"Total da conta:   R$ {total:.2f}")
 
-# PASSO 6 - Testar com os exemplos do Passo 2:
-print()
-print("--- Testes automáticos ---")
-for conta_teste, perc_teste, esperado in [(100, 10, 110), (85, 15, 97.75), (200, 20, 240)]:
-    g, t = calcular_gorjeta(conta_teste, perc_teste)
-    status = "OK" if abs(t - esperado) < 0.01 else "ERRO"
-    print(f"R${conta_teste} + {perc_teste}% = R${t:.2f} [{status}]")
+# Passo 6: testes automaticos com os exemplos do Passo 2
+print("\n--- Verificando com exemplos conhecidos ---")
+assert calcular_gorjeta(80, 10) == (8.0, 88.0), "Caso 1 falhou"
+assert calcular_gorjeta(150, 15) == (22.5, 172.5), "Caso 2 falhou"
+assert calcular_gorjeta(200, 20) == (40.0, 240.0), "Caso 3 falhou"
+print("Todos os testes passaram.")

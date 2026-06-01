@@ -4,47 +4,72 @@
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
 # Capitulo 13 - Lendo Erros como um Programador
+# Snippet: agregado de versoes corrigidas dos 6 erros comuns
 # ============================================================
-# Exemplos de erros comuns e como interpretá-los
+# Cada secao mostra um erro tipico e a versao corrigida.
+# Os trechos com erro estao COMENTADOS para o arquivo rodar sem crashar.
 
-print("=== Tipos de Erro em Python ===")
+print("=== Tipos de Erro em Python (versoes corrigidas) ===\n")
+
+# 1. SyntaxError - gramatica errada (so ilustrativo - codigo errado nao roda)
+print("--- SyntaxError ---")
+print("Codigo ERRADO (comentado): if nota >= 7  <- falta os dois-pontos")
+# Versao CORRETA: dois-pontos sao obrigatorios apos if, else, for, while, def
+nota = 8.5
+if nota >= 7:
+    print(f"Aprovado: {nota}")
 print()
 
-# 1. NameError — variável não existe
+# 2. NameError - variavel nao definida
 print("--- NameError ---")
-print("Causa: usar uma variável antes de criá-la")
-print("Código problemático: print(resultado)  # resultado não foi definido")
-print("Solução: definir a variável antes de usar")
-resultado = 42
-print(f"Correto: resultado = 42, depois print(resultado) → {resultado}")
+print("Codigo ERRADO (comentado): print(resultado) antes de definir 'resultado'")
+# Versao CORRETA: definir antes de usar
+nota1 = 8.0
+nota2 = 7.5
+media = (nota1 + nota2) / 2
+print(f"Media: {media}")  # 7.75
 print()
 
-# 2. TypeError — tipo errado
+# 3. TypeError - tipos incompativeis
 print("--- TypeError ---")
-print("Causa: operação com tipos incompatíveis")
-numero = "5"  # string, não int
-# numero + 3  ← isso geraria TypeError: can only concatenate str (not "int") to str
-numero_int = int(numero)  # converter antes
-print(f"Correto: int('5') + 3 = {numero_int + 3}")
+print("Codigo ERRADO (comentado): 2026 - input(...) - subtrair int de string")
+# Versao CORRETA: converter input para int antes de operar
+idade_texto = "25"  # simulando entrada do usuario
+idade = int(idade_texto)
+ano_nascimento = 2026 - idade
+print(f"Voce nasceu em {ano_nascimento}")
 print()
 
-# 3. ZeroDivisionError — divisão por zero
+# 4. ZeroDivisionError - divisao por zero
 print("--- ZeroDivisionError ---")
-print("Causa: tentar dividir por zero")
-divisor = int(input("Digite um divisor (tente 0): "))
-if divisor == 0:
-    print("Erro: não é possível dividir por zero!")
+print("Codigo ERRADO (comentado): sum([]) / len([]) - len de lista vazia e 0")
+# Versao CORRETA: verificar se a lista tem elementos antes de dividir
+notas = []
+if len(notas) > 0:
+    media = sum(notas) / len(notas)
+    print(f"Media: {media}")
 else:
-    print(f"100 / {divisor} = {100 / divisor:.2f}")
+    print("Nenhuma nota registrada.")
 print()
 
-# 4. IndexError — índice fora do alcance
+# 5. IndexError - indice fora do alcance
 print("--- IndexError ---")
-frutas = ["maçã", "banana", "laranja"]
-print(f"Lista: {frutas}")
-print(f"Índices válidos: 0, 1, 2 (total: {len(frutas)} itens)")
-indice = int(input("Digite um índice para acessar: "))
-if 0 <= indice < len(frutas):
-    print(f"frutas[{indice}] = {frutas[indice]}")
+print("Codigo ERRADO (comentado): frutas[5] em uma lista de 3 itens")
+# Versao CORRETA: acessar apenas indices que existem
+frutas = ["maca", "banana", "laranja"]
+if len(frutas) > 5:
+    print(frutas[5])
 else:
-    print(f"IndexError! Índice {indice} está fora do intervalo 0-{len(frutas)-1}")
+    print(f"A lista tem apenas {len(frutas)} elementos.")
+print()
+
+# 6. ValueError - conversao impossivel
+print("--- ValueError ---")
+print("Codigo ERRADO (comentado): int('vinte') - texto nao numerico")
+# Versao CORRETA: verificar se a entrada pode ser convertida antes
+entrada = "25"  # simulando entrada valida
+if entrada.isdigit():
+    idade = int(entrada)
+    print(f"Voce tem {idade} anos.")
+else:
+    print("Entrada invalida. Digite apenas numeros.")

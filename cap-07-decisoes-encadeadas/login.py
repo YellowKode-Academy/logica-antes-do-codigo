@@ -4,33 +4,31 @@
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
 # Capitulo 7 - Decisoes Encadeadas
+# Snippet: exercicio resolvido - sistema de login com 3 tentativas
 # ============================================================
-# Demonstra AND, OR e condições compostas
 
-USUARIO_CORRETO = "kelvin"
-SENHA_CORRETA = "python123"
-MAX_TENTATIVAS = 3
+# credenciais validas (em sistemas reais, nunca ficam no codigo assim)
+usuario_valido = "admin"
+senha_valida = "1234"
 
-print("=== Sistema de Login ===")
-
+# contador de tentativas
 tentativas = 0
-acesso = False
+limite = 3
 
-while tentativas < MAX_TENTATIVAS:
-    usuario = input("Usuário: ")
+# loop de tentativas - explicado em detalhe no proximo capitulo
+while tentativas < limite:
+    usuario = input("Usuario: ")
     senha = input("Senha: ")
+    tentativas = tentativas + 1
 
-    # Condição composta: ambos precisam estar corretos
-    if usuario == USUARIO_CORRETO and senha == SENHA_CORRETA:
-        acesso = True
-        break
+    # verifica se usuario E senha estao corretos ao mesmo tempo
+    if usuario == usuario_valido and senha == senha_valida:
+        print("Acesso liberado. Bem-vindo!")
+        break  # sai do loop ao acertar
+
     else:
-        tentativas += 1
-        restantes = MAX_TENTATIVAS - tentativas
+        restantes = limite - tentativas
         if restantes > 0:
-            print(f"Credenciais inválidas. {restantes} tentativa(s) restante(s).")
+            print(f"Credenciais incorretas. {restantes} tentativa(s) restante(s).")
         else:
             print("Conta bloqueada por excesso de tentativas.")
-
-if acesso:
-    print(f"Bem-vindo, {usuario}! Acesso liberado.")

@@ -3,45 +3,42 @@
 #        Do Pseudocodigo ao Python Real
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
-# Capitulo 15 - O Que Voce Aprendeu
+# Capitulo 15 - O Que Voce Aprendeu - e o Que Vem a Seguir
+# Snippet: programa que usa todos os 8 conceitos do livro
 # ============================================================
-# Um exemplo por conceito aprendido no livro
 
-print("=== REVISÃO COMPLETA ===")
-print()
+# Revisao: variaveis, tipos, sequencia, if/elif/else,
+# for, while, listas e funcoes - tudo em um programa so
 
-# 1. Variáveis e tipos
-nome = "Kelvin"
-idade = 32
-print(f"1. Variáveis: nome={nome}, idade={idade}")
+def classificar_nota(nota):
+    # Funcao com if/elif/else - Conceito 8 + 4
+    if nota >= 9:
+        return "Excelente"
+    elif nota >= 7:
+        return "Aprovado"
+    elif nota >= 5:
+        return "Recuperacao"
+    else:
+        return "Reprovado"
 
-# 2. Entrada (simulada para revisão)
-# numero = int(input("Digite um número: "))
-numero = 7  # valor fixo para demonstração
-print(f"2. Entrada (simulada): numero={numero}")
+# Variaveis e tipos - Conceitos 1 e 2
+disciplinas = []  # lista vazia - Conceito 7
+notas = []
 
-# 3. Condição
-if numero % 2 == 0:
-    paridade = "par"
-else:
-    paridade = "ímpar"
-print(f"3. Condição (IF): {numero} é {paridade}")
+# Loop while para coleta - Conceito 6
+continuar = True
+while continuar:
+    nome = input("Nome da disciplina (ou 'fim' para encerrar): ")
+    if nome.lower() == "fim":
+        continuar = False
+    else:
+        nota = float(input(f"Nota de {nome}: "))
+        disciplinas.append(nome)
+        notas.append(nota)
 
-# 4. For
-soma = 0
-for i in range(1, numero + 1):
-    soma += i
-print(f"4. For: soma de 1 a {numero} = {soma}")
-
-# 5. Lista
-quadrados = [i ** 2 for i in range(1, 6)]  # versão avançada para o apêndice
-print(f"5. Lista: quadrados de 1-5 = {quadrados}")
-
-# 6. Função
-def dobrar(valor):
-    return valor * 2
-
-print(f"6. Função: dobrar({numero}) = {dobrar(numero)}")
-
-print()
-print("Você domina esses 6 conceitos. Está pronto para o próximo nível.")
+# Sequencia de processamento - Conceito 3
+# Loop for para exibir resultados - Conceito 5
+print("\n--- BOLETIM FINAL ---")
+for i in range(len(disciplinas)):
+    classificacao = classificar_nota(notas[i])
+    print(f"{disciplinas[i]}: {notas[i]:.1f} ({classificacao})")

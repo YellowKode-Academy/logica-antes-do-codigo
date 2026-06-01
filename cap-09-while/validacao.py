@@ -4,35 +4,35 @@
 # Autor: Kelvin Biffi
 # Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
 # Capitulo 9 - While: Repetindo Ate Acontecer
+# Snippet: validacao de numero positivo + jogo de adivinhar (exemplo central)
 # ============================================================
-# Pede número positivo até o usuário digitar um válido
 
-print("=== Validação de Entrada ===")
-
-numero = -1  # valor inicial que força a entrada no loop
+# exemplo 1: pedir numero positivo ate o usuario digitar um valido
+print("=== Validacao de numero positivo ===")
+numero = 0  # valor inicial que garante a entrada no loop
 
 while numero <= 0:
-    entrada = input("Digite um número positivo: ")
+    entrada = input("Digite um numero positivo: ")
     numero = float(entrada)
     if numero <= 0:
-        print("Número inválido. Tente novamente.")
+        print("Esse valor nao e positivo. Tente novamente.")
 
-print(f"Ótimo! Você digitou: {numero}")
+print(f"Numero aceito: {numero}")
 
-print()
+# exemplo 2: jogo de adivinhar (numero secreto = 42)
+print("\n=== Jogo: Adivinhe o numero entre 1 e 100 ===")
+numero_secreto = 42
+tentativas = 0
+acertou = False
 
-# Adivinhar número (bônus)
-print("=== Jogo: Adivinhe o Número ===")
-secreto = 42
-tentativa = 0
+while not acertou:
+    chute = int(input("Seu chute: "))
+    tentativas = tentativas + 1
 
-while True:
-    chute = int(input("Chute um número entre 1 e 100: "))
-    tentativa += 1
-    if chute < secreto:
-        print("Muito baixo!")
-    elif chute > secreto:
-        print("Muito alto!")
+    if chute < numero_secreto:
+        print("Muito baixo. Tente um numero maior.")
+    elif chute > numero_secreto:
+        print("Muito alto. Tente um numero menor.")
     else:
-        print(f"Acertou em {tentativa} tentativa(s)!")
-        break
+        acertou = True  # muda a condicao - o loop vai encerrar
+        print(f"Acertou em {tentativas} tentativa(s)!")

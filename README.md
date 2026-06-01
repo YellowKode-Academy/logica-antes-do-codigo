@@ -27,7 +27,7 @@ Para validar que tudo funciona na sua máquina:
 python testar_tudo.py
 ```
 
-Esperado: **37/37 testes passando**.
+Esperado: **109/109 testes passando**.
 
 ---
 
