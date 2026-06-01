@@ -1,4 +1,10 @@
-# Capítulo 5 — Sequência: Calculadora de Troco
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 5 - Sequencia: A Base de Tudo
+# ============================================================
 # Padrão: Entrada → Processamento → Saída
 
 print("=== Calculadora de Troco ===")

@@ -1,5 +1,10 @@
-# Capítulo 11 — Funções: Reutilize o Raciocínio
-
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 11 - Funcoes: Reutilize o Raciocinio
+# ============================================================
 def calcular_desconto(preco, percentual):
     """Calcula o preço final após aplicar desconto percentual."""
     valor_desconto = preco * (percentual / 100)

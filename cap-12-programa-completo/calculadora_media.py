@@ -1,4 +1,10 @@
-# Capítulo 12 — Primeiro Programa Completo
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 12 - Seu Primeiro Programa Completo
+# ============================================================
 # Calculadora de média escolar com 3 disciplinas
 
 def calcular_media(notas):

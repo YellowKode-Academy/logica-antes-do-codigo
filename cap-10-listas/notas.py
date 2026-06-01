@@ -1,5 +1,10 @@
-# Capítulo 10 — Listas: Calculadora de Média com Notas
-
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 10 - Listas: Guardando Varios Valores
+# ============================================================
 print("=== Calculadora de Média ===")
 
 notas = []

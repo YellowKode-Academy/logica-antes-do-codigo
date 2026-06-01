@@ -1,4 +1,10 @@
-# Capítulo 6 — Decisão: Sistema de Aprovação Escolar
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 6 - Decisao: O IF que Voce Ja Usa
+# ============================================================
 #
 # Pseudocódigo:
 #   RECEBER nota

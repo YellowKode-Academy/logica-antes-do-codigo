@@ -1,4 +1,10 @@
-# Capítulo 13 — Lendo Erros como um Programador
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 13 - Lendo Erros como um Programador
+# ============================================================
 # Exemplos de erros comuns e como interpretá-los
 
 print("=== Tipos de Erro em Python ===")

@@ -1,4 +1,10 @@
-# Capítulo 2 — Dados São Informação
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 2 - Dados Sao Informacao
+# ============================================================
 # Variáveis são caixinhas com etiqueta. Tipos definem o que cabe dentro.
 
 # Tipos básicos de dados

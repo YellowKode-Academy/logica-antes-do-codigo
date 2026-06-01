@@ -1,4 +1,10 @@
-# Capítulo 9 — While: Repetindo até Acontecer
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 9 - While: Repetindo Ate Acontecer
+# ============================================================
 # Pede número positivo até o usuário digitar um válido
 
 print("=== Validação de Entrada ===")

@@ -1,4 +1,10 @@
-# Capítulo 1 — Instruções São Tudo
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 1 - Instrucoes Sao Tudo
+# ============================================================
 # Computadores executam instruções exatas, na ordem certa.
 
 # Exemplo 1: Fazer café — cada instrução importa

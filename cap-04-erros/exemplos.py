@@ -1,4 +1,10 @@
-# Capítulo 4 — Erros São Parte do Processo
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 4 - Erros Sao Parte do Processo
+# ============================================================
 # Três tipos de erro: Sintaxe, Lógica, Execução
 # Este arquivo mostra exemplos CORRETOS com comentários sobre os erros comuns
 

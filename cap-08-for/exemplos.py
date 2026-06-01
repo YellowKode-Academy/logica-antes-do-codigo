@@ -1,4 +1,10 @@
-# Capítulo 8 — Repetição com FOR
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 8 - Repeticao com FOR
+# ============================================================
 # O for percorre uma sequência de valores
 
 print("=== Contagem de 1 a 10 ===")

@@ -1,4 +1,10 @@
-# Capítulo 3 — Algoritmos: Encontrar o maior de três números
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 3 - Algoritmos Ja Existem na Sua Vida
+# ============================================================
 #
 # Pseudocódigo:
 #   RECEBER numero1, numero2, numero3

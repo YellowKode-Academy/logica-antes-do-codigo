@@ -1,4 +1,10 @@
-# Capítulo 7 — Decisões Encadeadas: Sistema de Login
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 7 - Decisoes Encadeadas
+# ============================================================
 # Demonstra AND, OR e condições compostas
 
 USUARIO_CORRETO = "kelvin"

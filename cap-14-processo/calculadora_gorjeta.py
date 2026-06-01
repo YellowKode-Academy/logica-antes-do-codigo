@@ -1,4 +1,10 @@
-# Capítulo 14 — Do Pseudocódigo ao Python: Processo de 6 Passos
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 14 - Do Pseudocodigo ao Python
+# ============================================================
 #
 # PROBLEMA: Calculadora de gorjeta
 #

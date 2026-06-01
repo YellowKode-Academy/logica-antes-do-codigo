@@ -1,4 +1,10 @@
-# Capítulo 15 — Revisão: Tabela de conceitos em ação
+# ============================================================
+# Livro: Logica de Programacao na Pratica
+#        Do Pseudocodigo ao Python Real
+# Autor: Kelvin Biffi
+# Repo:  https://github.com/YellowKode-Academy/logica-antes-do-codigo
+# Capitulo 15 - O Que Voce Aprendeu
+# ============================================================
 # Um exemplo por conceito aprendido no livro
 
 print("=== REVISÃO COMPLETA ===")
