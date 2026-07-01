@@ -1,4 +1,10 @@
-# Lógica de Programação na Prática
+﻿# Lógica de Programação na Prática
+
+[![Capa do Livro](cover.jpg)](https://www.amazon.com.br/dp/B0H3KVBPB2)
+
+> **[Disponivel na Amazon.com.br](https://www.amazon.com.br/dp/B0H3KVBPB2)** — R$9,97
+
+---
 
 **Do Pseudocódigo ao Python Real — Para Quem Quer Entender, Não Só Copiar**
 
